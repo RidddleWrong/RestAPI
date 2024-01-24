@@ -30,7 +30,6 @@ class CustomerController extends Controller
             $customers = $customers->with('invoices');
         }
         return new CustomerCollection($customers->paginate()->appends($request->query()));
-//        return new CustomerCollection(Customer::paginate());
     }
 
     /**

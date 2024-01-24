@@ -10,6 +10,7 @@ class ApiFilter
     protected $safeParms = [];
     protected $columnMap = [];
     protected $operatorMap = [];
+
     public function transform(Request $request){
         $eloQuery = [];
 
